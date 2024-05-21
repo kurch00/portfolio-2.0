@@ -92,6 +92,9 @@ header nav ul li a:hover{
 
 main{
     padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
 }
 
 main .menu{
@@ -145,4 +148,157 @@ main .menu .esquerda button a{
     text-decoration: none;
     position: relative;
     z-index: 1;
+}
+
+
+
+
+main .sobre{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 80px;
+}
+
+main .sobre .txt-sobre{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .sobre .txt-sobre h3{
+    font-weight: 200;
+    font-size: 16px;
+}
+
+main .sobre .txt-sobre .introducao-sobre{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+main .sobre .txt-sobre .introducao-sobre h1{
+    font-size: 50px;
+}
+
+main .sobre .txt-sobre .introducao-sobre .linha-sobre{
+    width: 40%;
+    border: 1px solid white;
+    height: 0px;
+    border-color: #9AA0C3;
+    margin-top: 5px;
+}
+
+main .sobre .txt-sobre p{
+    width: 55%;
+    font-size: 18px;
+    color: #9AA0C3;
+}
+
+main .sobre .cards-sobre{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .sobre .cards-sobre .card-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid white;
+    background-color: #0d1c35;
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+    color: #AAA6C3;
+    font-weight: 600;
+    transition: linear .2s;
+    cursor: pointer;
+}
+
+main .sobre .cards-sobre .card-sobre:hover{
+    transform: scale(1.05);
+}
+
+main .sobre .cards-sobre .card-sobre .circulo{
+    background-color: #5CE9CB;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+main .sobre .cards-sobre .card-sobre .circulo i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: black;
+}
+
+main .sobre .cards-sobre .card-sobre .circulo-svg{
+    background-color: #5CE9CB;
+    padding: 15px 20px;
+    border-radius: 50%;
+}
+
+main .sobre .cards-sobre .card-sobre .circulo-game{
+    background-color: #5CE9CB;
+    padding: 25px 30px;
+    border-radius: 50%;
+    color: black;
+    font-size: 22px;
+}
+
+main .sobre .cards-sobre .card-sobre .circulo svg{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+main .tecnologias{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 80px;
+}
+
+main .tecnologias .txt-tech{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .tecnologias .txt-tech h3{
+    font-weight: 200;
+    font-size: 16px;
+}
+
+main .tecnologias .txt-tech h1{
+    font-size: 50px;
+}
+
+
+main .tecnologias .txt-tech .cards-tech{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech{
+    height: 20vw;
+    width: 40vw;
+    border: white 1px solid;
+    border-radius: 10px;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech h1{
+    display: flex;
+    justify-content: center;
 }
