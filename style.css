@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #091427;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    align-items: center;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    color: #46af9d;
+    gap: 20px;
+}
+
+header .logo .nome-header{
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+header nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.btn-hover {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #46af9d;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.4s ease;
+}
+
+.btn-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #46af9d;
+    z-index: 0;
+    transition: transform 0.4s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.btn-hover:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-hover span {
+    position: relative;
+    z-index: 1;
+}
+
+
+header nav ul li a{
+    color: #46af9d;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: white;
+}
+
+
+main{
+    padding: 50px 100px;
+}
+
+main .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .menu .esquerda{
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
+main .menu .menu-txt{
+    color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+main .menu .menu-txt h1{
+    font-size: 30px;
+}
+
+main .menu .menu-txt h1 span{
+    font-size: 45px;
+    color: #46af9d;
+    font-weight: 900;
+}
+
+main .menu .menu-txt h3{
+    width: 75%;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+main .menu .esquerda button{
+    background-color: transparent;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #46af9d;
+    border-radius: 5px;
+    width: 25%;
+    color: white;
+}
+
+main .menu .esquerda button a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
