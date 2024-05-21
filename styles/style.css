@@ -83,6 +83,7 @@ header nav ul{
 header nav ul li a{
     color: #46af9d;
     text-decoration: none;
+    transition: .2s linear;
 }
 
 header nav ul li a:hover{
@@ -179,6 +180,7 @@ main .sobre .txt-sobre .introducao-sobre{
 
 main .sobre .txt-sobre .introducao-sobre h1{
     font-size: 50px;
+    color: #5CE9CB;
 }
 
 main .sobre .txt-sobre .introducao-sobre .linha-sobre{
@@ -209,8 +211,8 @@ main .sobre .cards-sobre .card-sobre{
     border: 1px solid white;
     background-color: #0d1c35;
     border-radius: 10px;
-    width: 250px;
-    height: 200px;
+    width: 20vw;
+    height: 15vw;
     color: #AAA6C3;
     font-weight: 600;
     transition: linear .2s;
@@ -267,7 +269,7 @@ main .tecnologias{
     display: flex;
     color: white;
     flex-direction: column;
-    gap: 80px;
+    gap: 100px;
 }
 
 main .tecnologias .txt-tech{
@@ -283,12 +285,14 @@ main .tecnologias .txt-tech h3{
 
 main .tecnologias .txt-tech h1{
     font-size: 50px;
+    color: #5CE9CB;
 }
 
 
 main .tecnologias .txt-tech .cards-tech{
     display: flex;
     justify-content: space-between;
+    padding-top: 50px;
 }
 
 main .tecnologias .txt-tech .cards-tech .card-tech{
@@ -296,9 +300,156 @@ main .tecnologias .txt-tech .cards-tech .card-tech{
     width: 40vw;
     border: white 1px solid;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main .tecnologias .txt-tech .cards-tech .card-tech h1{
+    position: relative;
+    text-align: center;
     display: flex;
     justify-content: center;
+    font-size: 1.8vw;
+    padding-top: 15px;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech h1::after {
+    content: '';
+    display: block;
+    width: 110%;
+    height: 2px;
+    background-color: #9AA0C3;
+    margin: 0 auto;
+    position: absolute;
+    left: 10;
+    right: 10;
+    bottom: 0;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    gap: 50%;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .linguagem{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .linguagem i{
+    font-size: 35px;
+    color: #9AA0C3;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .linguagem .escrita{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .linguagem .escrita h3{
+    font-weight: 600;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .linguagem .escrita p{
+    font-weight: 400;
+    color: #9AA0C3;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .js{
+    margin-left: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .js i{
+    font-size: 35px;
+    color: #9AA0C3;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .js .escrita{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .js .escrita h3{
+    font-weight: 600;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .js .escrita p{
+    font-weight: 400;
+    color: #9AA0C3;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .java{
+    margin-left: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .java i{
+    font-size: 35px;
+    color: #9AA0C3;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .java .escrita{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .java .escrita h3{
+    font-weight: 600;
+}
+
+main .tecnologias .txt-tech .cards-tech .card-tech .content-tech .coluna .java .escrita p{
+    font-weight: 400;
+    color: #9AA0C3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+main .experiencia{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 80px;
+}
+
+main .experiencia .txt-exp{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .experiencia .txt-exp h3{
+    font-weight: 200;
+    font-size: 16px;
+}
+
+main .experiencia .txt-exp h1{
+    font-size: 50px;
+    color: #5CE9CB;
 }
